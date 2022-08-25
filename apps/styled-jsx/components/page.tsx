@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 
-const Button = lazy(() => import(`.` + "/button"));
+const Button = lazy(() => import('../components/button'))
 
 export default function Page() {
   return (

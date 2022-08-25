@@ -1,7 +1,6 @@
-import { Suspense } from "react";
-import getSlot from "../lib/get-slot";
+import { lazy, Suspense } from "react";
 
-const Page = getSlot("page");
+const Page = lazy(() => import('../components/page'))
 
 export default function Web() {
   return (
